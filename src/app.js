@@ -97,3 +97,7 @@ app.delete("/biodata/:id", (req,res)=>{
         res.status(500).send("Server Internal Error")
     });
 })
+
+app.listen(port, () => {
+    console.log(`Server is running on http://localhost:${port}`);
+});
